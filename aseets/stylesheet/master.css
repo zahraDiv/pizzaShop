@@ -1,0 +1,837 @@
+/* -------------------------------------- start heder------------------------------  */
+.head-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 120px;
+    background-color: rgba(18, 18, 18, 0.384);
+
+    backdrop-filter: blur(30px);
+
+    >.row {
+        padding: 0 7%;
+        height: 100%;
+
+        >* {
+            height: 100%;
+        }
+
+        /* <!-- ----img heder----  --> */
+        >figure {
+            width: 20%;
+            display: flex;
+            align-items: center;
+
+            >img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                padding: 0 50px;
+            }
+        }
+
+        /* <!-- -----end img heder------  --> */
+        /* <!-- ------stsrt menu heder-------  --> */
+        >nav {
+            width: 60%;
+
+            >ul {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+
+                >li {
+                    >a {
+                        display: flex;
+                        height: 100%;
+                        text-transform: capitalize;
+                        align-items: center;
+                        color: rgb(255, 255, 255);
+                        padding: 0 30px;
+
+                        &:hover {
+                            color: rgba(255, 255, 255, 0.479);
+
+                        }
+                    }
+
+                }
+            }
+        }
+
+        /* <!-------end menu heder--------> */
+        /* ------- stsrt a heder---------  */
+        >div {
+            width: 15%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            >a {
+                display: flex;
+                width: 150px;
+                height: 45px;
+                background-color: rgba(17, 17, 17, 0.431);
+                color: rgb(255, 253, 253);
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                border-radius: 50px;
+
+                &:hover {
+                    color: rgba(255, 255, 255, 0.596);
+                }
+            }
+        }
+
+        /* ------- stsrt a heder-------- */
+    }
+}
+
+/* <!-- -------------------- ensd header------------------------------------------------------ */
+/* --------------------------------start 100vh (1)-----------------------------------------------  */
+
+
+section {
+    width: 100%;
+    min-height: 180vh;
+    overflow: hidden;
+    background-color: rgb(152, 2, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    /* <!-------- img 100vh(1) -----------> */
+    >figure {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        margin-bottom: -82%;
+
+        >img {
+
+            width: 100%;
+            height: 90%;
+            object-fit: cover;
+            animation: z linear 50s infinite;
+            /* position: absolute; */
+            margin-top: -200px;
+        }
+    }
+
+    /* <!------- end img 100vh (1) --------> */
+    /* ----------txt 100vh(1)---------  */
+    >.txt {
+        position: absolute;
+        padding: 0 7%;
+        color: white;
+        z-index: 99;
+
+        >* {
+            width: 100%;
+            text-transform: capitalize;
+        }
+
+        >h2 {
+            color: rgb(237, 219, 23);
+            font-size: 50px;
+            margin-top: -350px;
+            text-align: center;
+
+        }
+
+        >h3 {
+            color: white;
+            font-size: 300px;
+
+            text-align: center;
+            text-shadow: 30px 30px 50px rgba(25, 25, 25, 0.998), -30px -30px 50px rgba(25, 25, 25, 0.998);
+        }
+    }
+
+    /* ----------end txt 100vh(1)---------- */
+}
+
+@keyframes z {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ------------------------ end 100vh------------------------------------  */
+/* --------------------------------start 100vh(2)----------------------------------- */
+.vh2 {
+    width: 100%;
+
+    /*-----h2 100vh(2)-------  */
+    >h2 {
+        color: black;
+        font-size: 70px;
+        text-align: center;
+        padding-top: -80px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        text-transform: capitalize;
+    }
+}
+
+/* -----end h2 100vh(2)----- */
+/* ------img ,figcaption 100vh (2)------- */
+.sec {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F0EEEA;
+    position: relative;
+
+    >.row {
+        width: 100%;
+        height: 100%;
+        padding: 7%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        >h2 {
+            color: black;
+            font-size: 70px;
+            text-align: center;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-transform: capitalize;
+        }
+
+        >figure {
+            width: 10%;
+            height: 100%;
+            margin: 0 40px;
+            margin-top: 80px;
+
+            >img {
+
+                width: 100%;
+                height: 80%;
+                object-fit: cover;
+                transition: 0.5s;
+
+                &:hover {
+                    scale: 1.1;
+
+                }
+            }
+
+            >figcaption {
+                color: black;
+                display: flex;
+                justify-content: center;
+                padding-left: 20px;
+                margin-top: 40px;
+                flex-wrap: wrap;
+                font-size: 25px;
+                padding: 10px;
+
+            }
+
+        }
+    }
+}
+
+/*-----end img ,figcaption 100vh (2)--------- */
+/* --------------------------------end 100vh(2)-------------------------------------  */
+/* --------------------------------- strat 100vh(3)------------------------------------------ */
+.hero {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+    /* ------------  img 100vh(3)------- */
+    >.img {
+        width: 50%;
+
+        >img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin-top: 5%;
+            margin-left: 300px;
+        }
+    }
+
+    /* ----------end img 100vh(3)-----------  */
+    /* ----------txt 100vh(3)-----------------  */
+    .txt {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        >p {
+            font-size: 40px;
+            color: #000000;
+            margin-left: -680px;
+            text-align: center;
+            margin-top: 50px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-transform: uppercase;
+
+        }
+    }
+
+    /* --------- end  txt 100vh(3)-----  */
+}
+
+/* ---------------------------- end 100vh(3)-------------------------------------  */
+/* --------------------------- strat 100vh(4)-----------------------------------------  */
+/* --------h2 100vh(4)-------  */
+.vh4 {
+    width: 100%;
+
+    >h2 {
+        color: black;
+        font-size: 70px;
+        text-align: center;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        text-transform: capitalize;
+    }
+}
+
+/* ------------ end h2 100vh(4)----------- */
+/* ----- img ,h2,h3,a 100vh(4)----- */
+.roww {
+    width: 100%;
+    height: auto;
+    height: 100vh;
+    display: flex;
+    flex: wrap;
+    justify-content: space-evenly;
+    padding: 150px 100px;
+
+    >.imgg {
+
+        overflow: hidden;
+        width: 300px;
+        height: 480px;
+        border-radius: 10px;
+        transition: 1s;
+        margin-top: -50px;
+
+
+        &:hover {
+            background-color: #F0EEEA;
+        }
+
+        >h4 {
+            font-size: 40px;
+        }
+
+        * {
+            width: 100%;
+        }
+
+        >figure {
+            height: 65%;
+
+
+            >img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                padding: 20px 10px;
+
+                animation: img 60s infinite;
+            }
+        }
+
+        >h2 {
+            font-size: 20px;
+            text-align: center;
+            /* border: 1px solid red; */
+            padding: 18px;
+        }
+
+        >h3 {
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.755);
+            text-align: center;
+            padding: 10px;
+            /* border: 1px solid blue; */
+        }
+
+        a {
+            width: 150px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 10px;
+            background-color: rgba(255, 255, 0, 0.34);
+            border-radius: 50px;
+            margin-top: 10px;
+            margin-left: 74px;
+
+            &:hover {
+                background-color: bisque;
+            }
+
+        }
+    }
+
+}
+
+/* ------ end img ,h2,h3,a 100vh(4)----- */
+
+@keyframes img {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ------------------------------- end 100vh(4)---------------------------------------------------  */
+/* ------------------------------- start 100vh(5)---------------------------------------------------  */
+.vh5 {
+    width: 100%;
+    height: 100vh;
+    background-color: #F0EEEA;
+
+    /* ---- title2-vh1 100vh(5)---- */
+    >.title2-vh1 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-left: 490px;
+
+        >p {
+
+            font-size: 70px;
+            color: black;
+            margin-top: 40px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-transform: capitalize;
+            text-align: center;
+        }
+    }
+
+    /* ----- end title2-vh1 100vh(5)---- */
+    /* ---- slider-vh5 100vh(5)---- */
+    >.slider-vh5 {
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        >.div {
+            width: 35%;
+            height: 40%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-wrap: wrap;
+            transition: .7s;
+            border-radius: 10px;
+            margin-left: -600px;
+
+            &:nth-of-type(2) {
+                margin-left: 100px;
+            }
+
+            &:nth-of-type(3) {
+                margin-top: 400px;
+                margin-left: -550px;
+            }
+
+            &:nth-of-type(4) {
+                margin-top: 400px;
+                margin-left: -1200px;
+            }
+
+            &:hover {
+                scale: 1.1;
+            }
+
+            >.img {
+                display: flex;
+                width: 50%;
+                height: 90%;
+                padding-left: 5px;
+                padding-top: 10px;
+
+                >img {
+                    object-fit: cover;
+                    border-radius: 10px;
+
+                }
+            }
+
+            >.txts {
+                /* display: flex; */
+                justify-content: center;
+                align-items: center;
+                margin-left: -130px;
+                margin-top: 25px;
+
+                >h5 {
+                    font-size: 35px;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    text-transform: capitalize;
+
+                }
+
+                >h6 {
+                    font-size: 16px;
+                    color: rgba(0, 0, 0, 0.532);
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    text-transform: uppercase;
+                    margin-top: 30px;
+                }
+            }
+
+            >.txtt {
+                >h6 {
+                    font-size: 15px;
+                    text-align: center;
+                    margin-top: 60px;
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+
+    /* ----end slider-vh5 100vh(5)---  */
+}
+
+/* ------------------------------ end 100vh(5)----------------------------------------------  */
+/* ------------------------------ start 100vh(6)----------------------------------------------  */
+.vh6 {
+    width: 100%;
+    height: 70vh;
+    background-color: #ffffff;
+
+    /* ---box 100vh(6) ---  */
+    >.box {
+        width: 40%;
+        background-color: #F0EEEA;
+        border-radius: 10px;
+        height: 350px;
+        margin: 150px 100px;
+
+        >img {
+            object-fit: cover;
+        }
+
+        >h5 {
+            color: rgb(152, 2, 2);
+            font-size: 25px;
+            margin-left: 350px;
+            margin-top: -230px;
+        }
+
+        >h4 {
+            font-size: 40px;
+            display: flex;
+            margin-left: 300px;
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        >a {
+            width: 150px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 10px;
+            background-color: rgba(255, 128, 128, 0.34);
+            border-radius: 50px;
+            margin-left: 400px;
+            margin-top: 20px;
+
+            &:hover {
+                background-color: bisque;
+            }
+
+        }
+    }
+
+    /* -----  end  box 100vh(6) --- */
+    /* ----box1 100vh(6)----   */
+    >.box1 {
+        display: flex;
+        width: 40%;
+        background-color: #F0EEEA;
+        border-radius: 10px;
+        height: 350px;
+        margin-left: 800px;
+        margin-top: -500px;
+
+        >img {
+            width: 70%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        >h4 {
+            font-size: 40px;
+            margin-top: 100px;
+            text-align: center;
+            margin-left: -30px;
+            display: flex;
+        }
+    }
+
+    /* -----end box1 100vh(6)-----  */
+}
+
+/* ------------------------- end 100vh(6)--------------------------------------------  */
+/* -------------------------start 100vh(7) (foorer)--------------------------------------------  */
+/* -----------------------------footer asmall------------------------------------ */
+.fixed-profile {
+    position: fixed;
+    left: 20px;
+    bottom: 7px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    z-index: 9999;
+}
+
+.title {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 13px;
+    color: #ffffff;
+    margin-left: -6px;
+}
+
+.circle-wrapper {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    margin-left: -22px;
+}
+
+.circle-wrapper img {
+    width: 130px;
+    height: 130px;
+    /* border-radius: 50% 50% 50% 50%; */
+    border-radius: 40px;
+    object-fit: cover;
+    border: 3px solid #eee;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.icon {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background: #7be5ff;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    font-size: 17px;
+
+    opacity: 0;
+    transform: scale(6px);
+    transition: 0.4s;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.circle-wrapper:hover .icon {
+    opacity: 1;
+}
+
+
+.icon:nth-child(5) {
+    top: 10%;
+    left: 75%;
+}
+
+.icon:nth-child(3) {
+    top: 30%;
+    left: 85%;
+}
+
+.icon:nth-child(4) {
+    top: 53%;
+    left: 85%;
+}
+
+.icon:nth-child(2) {
+    top: 73%;
+    left: 75%;
+}
+
+.instagram {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+}
+
+.telegram {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+}
+
+.github {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+}
+
+.mail {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+}
+
+
+.circle-wrapper:hover .icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.icon:hover {
+    background: #ff7a00;
+    color: #ffffff;
+}
+
+
+/* ----------------------- end footer asmall---------------------------- */
+/* -----------------------  footer great---------------------------- */
+
+.footer {
+    background: #666664;
+    padding: 90px 20px 60px;
+    /* فضای بیشتر از بالا برای عکس بزرگ */
+    text-align: center;
+    border-top: 1px solid rgba(0, 255, 255, 0.08);
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.profile-pic {
+    margin: 0 auto 40px auto;
+    width: fit-content;
+    margin-top: 70px;
+}
+
+.profile-pic img {
+    width: 300px;
+    /* خیلی بزرگ‌تر */
+    height: 300px;
+    /* مربع کامل */
+    object-fit: cover;
+    /* عکس بدون کشیدگی */
+    border: 6px solid #00f0ff;
+    box-shadow:
+        0 0 40px rgba(0, 240, 255, 0.7),
+        inset 0 0 25px rgba(0, 240, 255, 0.5);
+    transition: all 0.4s ease;
+    border-radius: 0;
+    /* مربع → بدون گردی */
+}
+
+.profile-pic img:hover {
+    transform: scale(1.08);
+    box-shadow:
+        0 0 70px #00f0ff,
+        0 0 100px rgba(0, 240, 255, 0.6);
+}
+
+.about-text {
+    margin-bottom: 50px;
+    color: #e0f7ff;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.about-text h3 {
+    font-size: 1.9rem;
+    margin-bottom: 16px;
+    color: #00f0ff;
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.7);
+}
+
+.about-text p {
+    font-size: 1.12rem;
+    line-height: 1.8;
+    color: #b0e0ff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 45px;
+}
+
+.social-icons a {
+    color: #00f0ff;
+    font-size: 2.6rem;
+    transition: all 0.4s ease;
+    text-shadow: 0 0 18px rgba(0, 240, 255, 0.7);
+}
+
+.social-icons a:hover {
+    transform: translateY(-12px) scale(1.3);
+    color: #ffffff;
+    text-shadow:
+        0 0 30px #00f0ff,
+        0 0 60px #00f0ff;
+}
+
+.copyright {
+    color: #8899a6;
+    font-size: 1.05rem;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* موبایل – عکس کمی کوچکتر میشه که صفحه رو خراب نکنه */
+@media (max-width: 680px) {
+    .profile-pic img {
+        width: 240px;
+        height: 240px;
+        border-width: 5px;
+    }
+
+    .social-icons {
+        gap: 40px;
+    }
+
+    .social-icons a {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-pic img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* ---------------------------end footer great-----------------------------------  */
